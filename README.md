@@ -30,6 +30,7 @@ println(a, ",", b, "!")
 println(a * "," * b * "!")
 ```
 # 関数
+* 関数について細かくはfunction.jlを参照
 ```Julia:関数
 # 型指定可能 function f(x::int, y::int)::Float64
 function f(x,y)
