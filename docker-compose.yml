@@ -1,0 +1,7 @@
+Vwesion: '3'
+services:
+    julia:
+        build: .
+        volumes:
+            - '.:/julia/src/work'
+        tty: true
