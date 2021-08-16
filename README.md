@@ -5,6 +5,8 @@
 ```Julia:変数
 x = 3
 y = "Hello Julia"
+print(x)
+println(y)
 ```
 # 二項演算子
 ```Julia:二項演算子
