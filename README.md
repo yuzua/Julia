@@ -29,6 +29,7 @@ b = "Julia"
 println(a, ",", b, "!")
 println(a * "," * b * "!")
 ```
+* 上記の細かい詳細はbasis.jlを参照
 # 関数
 * 関数について細かくはfunction.jlを参照
 ```Julia:関数
