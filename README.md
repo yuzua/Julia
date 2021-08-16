@@ -29,3 +29,10 @@ b = "Julia"
 println(a, ",", b, "!")
 println(a * "," * b * "!")
 ```
+# 関数
+```Julia:関数
+# 型指定可能 function f(x::int, y::int)::Float64
+function f(x,y)
+    return x / y
+end
+```
