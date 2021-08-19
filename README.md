@@ -53,3 +53,8 @@ end
 # a ? b : c aが条件式で、tureの場合b、falseの場合はcを評価
 println(x<y ? "less than" : "not less than")
 ```
+* 短絡評価
+```Julia:短絡評価
+# if 条件 文 end を 条件 && 文 と書く事ができる
+# if !条件 文 end を 条件 || 文 と書く事ができる
+```
