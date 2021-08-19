@@ -89,3 +89,12 @@ finally
     println("処理が終わりました")
 end
 ```
+# 型の宣言
+```Julia:型の宣言
+# 変数名::データ型
+x::Int64 = 3
+# 抽象型の宣言 abstract type <name> end
+abstract type Number end
+# プリミティブ型 primitive type <name> <: <supertype> <bits> end
+primitive type Int16 <: Signed 16 end
+```
