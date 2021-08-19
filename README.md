@@ -59,3 +59,11 @@ println(x<y ? "less than" : "not less than")
 # if !条件 文 end を 条件 || 文 と書く事ができる
 ```
 # 繰り返し
+* while文
+```Julia:while文
+i = 0
+while i <= 10
+    printlm(i)
+    global i += 2 #グローバル変数を変更するため global 変数名
+end
+```
