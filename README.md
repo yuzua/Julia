@@ -38,7 +38,7 @@ function f(x,y)
     return x / y
 end
 ```
-# IF文
+# 条件式
 ```Julia:IF文
 if x < y
     println("x is less than y")
@@ -58,3 +58,4 @@ println(x<y ? "less than" : "not less than")
 # if 条件 文 end を 条件 && 文 と書く事ができる
 # if !条件 文 end を 条件 || 文 と書く事ができる
 ```
+# 繰り返し
