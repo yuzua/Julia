@@ -1,4 +1,3 @@
-function f(x,y)
-    return x + y
-end
-println(f(2,3))
+using PyCall
+a = 50
+py"print(a)"

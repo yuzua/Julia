@@ -131,3 +131,8 @@ a = Dict([("Banana",1),("Orange",2),("Apple",3)])
 a["Apple"] # 摘出
 a["Mango"] = 4 # 追加
 ```
+# Pythonの呼び出し
+```Julia:Pythonの呼び出し
+using PyCall
+py"<pythonコマンド>"
+```
