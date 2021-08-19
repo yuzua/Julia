@@ -73,3 +73,19 @@ for i = 1:7
     println(i)
 end
 ```
+# 例外処理
+* try/catch/finallyとException
+```Julia:例外処理
+try
+    f = open("exaple.txt")
+    lines = readlines(f)
+    for line in lines
+        println(line)
+    end
+    close(f)
+cathch
+    println("ファイルを開けれませんでした")
+finally
+    println("処理が終わりました")
+end
+```
