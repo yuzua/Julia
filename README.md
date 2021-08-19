@@ -67,3 +67,9 @@ while i <= 10
     global i += 2 #グローバル変数を変更するため global 変数名
 end
 ```
+* IF文
+```Julia:IF文
+for i = 1:7
+    println(i)
+end
+```
