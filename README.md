@@ -98,3 +98,17 @@ abstract type Number end
 # プリミティブ型 primitive type <name> <: <supertype> <bits> end
 primitive type Int16 <: Signed 16 end
 ```
+# コレクション
+* タプル・・・同じ型又は異なる型の複数個のオブジェクトにおける不変の順序付けされたコレクション
+```Julia:タプル
+# 空のタプル作成
+t1 = ()
+# タプルが空であることの確認
+println(isempty(t1))
+# タプルの内容の添字による摘出
+t2 = (1, 2, 3, 4)
+t2[1] #添字は1からスタート
+# 名前付きで作成
+t3 = (a=1, b=2, c=3, d="Hello,Julia")
+t3[a]
+```
