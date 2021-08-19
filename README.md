@@ -38,3 +38,13 @@ function f(x,y)
     return x / y
 end
 ```
+# IF文
+```Julia:IF文
+if x < y
+    println("x is less than y")
+elseif x > y
+    println("x is greater than y")
+else
+    println("x is equal to y")
+end
+```
