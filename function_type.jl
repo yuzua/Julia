@@ -18,3 +18,12 @@ pop!(A) # 末尾の要素取り出し
 push!(A, 6, 7, 8) # 末尾に要素の追加
 insert!(A, 4, 3) # 任意の位置に要素を追加 inset!(<配列名>, <場所>, <要素>)
 deleteat!(A, )
+
+# Vector()関数,Array()関数・・・等差数列の作成
+Vector(1:7) # 1~7
+Vector(1:2:7) # 1 3 5 7
+Array(1:2:7)
+
+# Matrix()関数・・・単位行列の作成
+using LinearAlgebra
+Matrix(1.0I, 4, 4) # 4x4で要素が0か1
