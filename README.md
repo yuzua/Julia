@@ -48,3 +48,8 @@ else
     println("x is equal to y")
 end
 ```
+* 三項演算子
+```Julia:三項演算子
+# a ? b : c aが条件式で、tureの場合b、falseの場合はcを評価
+println(x<y ? "less than" : "not less than")
+```
