@@ -27,3 +27,18 @@ Array(1:2:7)
 # Matrix()関数・・・単位行列の作成
 using LinearAlgebra
 Matrix(1.0I, 4, 4) # 4x4で要素が0か1
+
+# rand()関数・・・乱数の作成
+rand(3)
+
+# sort()関数・・・ソート
+a = [5, 2, 4, 1]
+sort(a)
+sort(a, rev=true) # 降順のソート
+sort(a, dims=2) # 行方向のソート
+
+# maximum()関数,minimum()関数,extrema()関数・・・最大値,最小値,最大値と最小値
+a = [5, 2, 4, 1]
+maximum(a)
+minimum(a)
+extrema(a)
