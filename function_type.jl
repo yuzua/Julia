@@ -6,3 +6,8 @@ typeof(Rational(Int)) #DataType
 
 # supertype()関数・・・型のスーパータイプを返す
 supertype(Float64) #AbstractFloat
+
+# keys()関数,values()関数・・・タプルのKeyとValueを摘出
+t3 = (a=1, b=2, c=3, d="Hello,Julia")
+keys(t3)
+values(t3)
