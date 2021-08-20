@@ -1,3 +1,3 @@
-using PyCall
-a = 50
-py"print(a)"
+number = parse(Int,readline())
+a = number % 2
+println(a)
