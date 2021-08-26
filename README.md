@@ -127,7 +127,7 @@ c[1,2]
 ```
 * 辞書・・・キーと値のペアを格納するコレクション
 ```Julia:辞書
-a = Dict([("Banana",1),("Orange",2),("Apple",3)])
+a = Dict("Banana"=>1,"Orange"=>2,"Apple"=>3)
 a["Apple"] # 摘出
 a["Mango"] = 4 # 追加
 ```
