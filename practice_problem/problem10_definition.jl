@@ -19,3 +19,8 @@ end
 function square_root(n)
     return sqrt(n)
 end
+
+function date_after(n)
+    date = Date(now()) + Dates.Day(n)
+    return year(date), month(date), day(date), Dates.dayname(date) 
+end
