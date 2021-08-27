@@ -11,3 +11,7 @@ end
 function area_circle(n)
     return floor(n * n * π)
 end
+
+function power_of(x, y)
+    return x ^ y
+end
