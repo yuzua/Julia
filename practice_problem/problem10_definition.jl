@@ -15,3 +15,7 @@ end
 function power_of(x, y)
     return x ^ y
 end
+
+function square_root(n)
+    return sqrt(n)
+end
