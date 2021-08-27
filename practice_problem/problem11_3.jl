@@ -17,5 +17,9 @@ function add(pt)
     return sum
 end
 
-calculation = Calculation([100, 200])
-println("$(get_x(calculation))から$(get_y(calculation))までの合計値は$(add(calculation))です。")
+function main()
+    calculation = Calculation([100, 200])
+    println("$(get_x(calculation))から$(get_y(calculation))までの合計値は$(add(calculation))です。")
+end
+
+main()
