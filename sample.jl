@@ -1,20 +1,26 @@
-using Statistics
+mutable struct Calculation
+    _arr
 
-struct Student
-    _name
-    _number
-    _score
+    function get_x(pt)
+        return pt._arr[1]
+    end
+
+    function get_y(pt)
+        return pt._arr[2]
+    end
+
+    function add(pt)
+        x = get_x(pt)
+        y = get_y(pt)
+        sum = 0
+        for i = x:y
+            sum += i
+        end
+        return sum
+    end
+
 end
 
-function three_means(list)
-    return mean(list._score)
-end
 
-student_a = Student("a", 100 ,[1,2,3])
-student_b = Student("b", 200, [1,3,5])
-student_list = (student_a, student_b)
-# for i = 1:length(student_list)
-#     println(student_list[i][1])
-# end
-# println("平均値は$(three_means(student_list[1]))")
-println(student_list[1]._name)
+calculation = Calculation([100, 200])
+println("$(get_x(calculation))から$(get_y(calculation))までの合計値は$(add(calculation))です。")
