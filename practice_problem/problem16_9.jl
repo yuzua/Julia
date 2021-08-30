@@ -1,0 +1,10 @@
+f = open("16_9_read.txt", "r")
+    list = readlines(f)
+close(f)
+f = open("16_9_sum.txt", "w")
+    for i = 1:length(list)
+        sum_list = split(list[i], ",")
+        sum_list = parse.(Int, sum_list)
+        println(f,"$(list[i]),$(sum(sum_list))")
+    end
+close(f)
