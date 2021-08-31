@@ -15,6 +15,5 @@ df = DataFrame(国語=Int64[],数学=Int64[],英語=Int64[],平均点=Float64[])
 for i = 1:5
     push!(df,[list_JP[i],list_math[i],list_EN[i],(list_JP[i]+list_math[i]+list_EN[i]/3)])
 end
-push!(parse(Int,mean(df[!,"国語"])),parse(Int,mean(df[!,"数学"])),parse(Int,mean(df[!,"英語"])),parse(Float64,mean(df[!,"平均点"])))
 println(df)
-# 未完成
+println("   6    $(mean(list_JP))    $(mean(list_math))     $(mean(list_EN))    $((mean(list_JP)+mean(list_math)+mean(list_EN) / 3))")
