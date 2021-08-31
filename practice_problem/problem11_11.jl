@@ -1,10 +1,9 @@
 struct Student
-    _munber
+    _number
     _name
     _jp_lang
     _math
     _en
-    _rank
 end
 
 # テスト結果を設定するメソッド
